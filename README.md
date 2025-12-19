@@ -10,7 +10,7 @@
 
 2. Install the following additional packages.
 ```
-pip install lightning yacs boto3 h5py mesh2sdf tetgen==0.6.3 pymeshlab
+pip install lightning yacs boto3 h5py mesh2sdf tetgen==0.6.3 pymeshlab google-genai
 pip install torch-scatter -f https://data.pyg.org/whl/torch-2.5.0+cu124.html
 ```
 

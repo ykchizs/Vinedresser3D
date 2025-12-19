@@ -235,9 +235,9 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--input_file", type=str, required=True)
     parser.add_argument("--editing_prompt", type=str, required=True)
-    args = parser.parse_args()
+    inputs = parser.parse_args()
 
-    name = args.input_file.split("/")[-1].split(".")[0]
+    name = inputs.input_file.split("/")[-1].split(".")[0]
     os.makedirs(f"outputs/grounding", exist_ok=True)
     os.makedirs(f"outputs/images_seg", exist_ok=True)
     os.makedirs(f"outputs/img_edit/ID", exist_ok=True)
@@ -251,12 +251,12 @@ if __name__ == "__main__":
 
     args = {
         'name': name,
-        'prompt_edit': args.editing_prompt,
+        'prompt_edit': inputs.editing_prompt,
         'combs': [0, 1, 2, 3, 4]
     }
 
     if not os.path.exists(f"outputs/img_Enc/{name}"):
-        renderImg_voxelize(args.input_file)
+        renderImg_voxelize(inputs.input_file)
     if not os.path.exists(f"outputs/slat/{name}_feats.pt"):
         encode_into_SLAT(name)
 
