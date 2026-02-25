@@ -1,6 +1,6 @@
 # Vinedresser3D: Towards Agentic Text-guided 3D Editing
 
-[Project Page](https://ykchizs.github.io/vinedresser3d.github.io/)
+[Project Page](https://vinedresser3d.github.io/)
 
 <img src="assets/teaser.jpeg" alt="Vinedresser3D Teaser" width="100%" />
 
@@ -32,3 +32,15 @@ python main.py --input_file "ancientFighter.glb" --editing_prompt "Change the sw
 3. The edited SLAT is saved in ```outputs/slat/``` as ```NAME_edited_feats.pt``` and ```NAME_edited_coords.pt```. The preview video is in ```outputs/videos/```.
 
 ## Citation
+
+```
+@article{chi2026vinedresser3d,
+      title={Vinedresser3D: Agentic Text-guided 3D Editing}, 
+      author={Yankuan Chi and Xiang Li and Zixuan Huang and James M. Rehg},
+      year={2026},
+      eprint={2602.19542},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2602.19542}, 
+}
+```
